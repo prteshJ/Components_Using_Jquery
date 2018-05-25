@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+    <!-- Navbar code -->
+    <nav class="navbar light" id="navbarTop">
+        <div class="navbar-brand">
+            <a class="nav-item" href="#"><strong>Navbar</strong></a>
+            <div class="navbar-burger burger" id="hamburger" data-target="navbarExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div id="navbarExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="nav-item" href="../index.html">Home</a>
+                <a class="nav-item" href="#">Link</a>
+                <a class="nav-item is-inactive" href="#">Disabled</a>
+                <div class="nav-item has-dropdown is-hoverable">
+                    <a class="nav-link" href="#">Dropdown</a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="nav-item is-active" href="#">Action</a>
+                        <a class="nav-item" href="#">Another Action</a>
+                        <hr class="navbar-divider">
+                        <a class="nav-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <span class="nav-item"><textarea class="textarea" placeholder="Search" rows="1"></textarea></span>
+                <div class="nav-item">
+                    <a class=" button primary outlined">Search</a>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="nav-item">
+                    <div class="field is-grouped">
+                        <p><a class="button primary" href="https://www.linkedin.com/in/priteshjakhotia/"><span class="icon"><i class="fab fa-linkedin-in"></i></span><span>Connect</span></a></p>
+                        <p><a class="button primary" href="https://github.com/prteshJ"><span class="icon"><i class="fab fa-github"></i></span><span>Projects</span></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Body code -->
+    <div id="blurMe" class="content">
+        <h1>Love</h1>
+        <p>Love is friendship that has caught fire. It is quiet understanding, mutual confidence, sharing and forgiving. It is loyalty through good and bad times. It settles for less than perfection and makes allowances for human weaknesses.</p>
+        <h2>Happiness</h2>
+        <p>Happiness, true happiness, is an <em>inner quality</em>. It is a state of mind. If your mind is at peace, you are happy. If your mind is at peace, but you have nothing else, you can be happy. If you have everything the world can give - pleasure, possessions, power - but lack peace of mind, you can never be happy.</p>
+        <ul>
+            <li>To be happy, we must not be too concerned with others.</li>
+            <li>Happiness is the art of never holding in your mind the memory of any unpleasant thing that has passed.</li>
+            <li>Happiness is when what you think, what you say, and what you do are in harmony.</li>
+            <li>Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.</li>
+        </ul>
+        <h3>Success</h3>
+        <p>Life is a series of punches. It presents a lot of challenges. It presents a lot of hardship, but the people that are able to take those punches and able to move forward are the ones that really do have a lot of success and have a lot of joy in their life and have a lot of stories to tell, too.</p>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Foggy jQuery Plugin -->
+    <script src="js/jquery.foggy.min.js"></script>
+    <!-- Navbar functional code -->
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

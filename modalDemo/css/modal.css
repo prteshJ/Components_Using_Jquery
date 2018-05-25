@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Add overflow css to get modal behavior */
+html {
+    background-color: #1b9af7;
+    background-image: url('../images/brick-wall-dark.png');
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    min-width: 18.75rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+div#btn {
+    display: flex;
+    justify-content: center;
+}
+
+/* Button styles go here */
+/* I want to not allow user to select text on button */
+.button {
+    user-select: none;
+}
+
+/* Styling button */
+.button {
+    cursor: pointer;
+    border-radius: 0.25rem;
+    color: white;
+    box-shadow: none;
+    display: flex;
+    font-size: 1rem;
+    height: 2rem;
+}
+
+/* Main button */
+.is-primary {
+    border: 0.0625rem solid #1b9af7;
+    background-color: #1b9af7;
+    padding: 0.375rem 0.625rem;
+    font-size: 1.1rem;
+    margin: 15vmax 0 0 0;
+}
+
+/* Modal button for positive action */
+.is-success {
+    border: 0.0625rem solid #28a745;
+    background-color: #28a745;
+}
+
+/* Modal button for cancel action */
+.is-caution {
+    border: 0.0625rem solid #dc3545;
+    background-color: #dc3545;
+}
+
+/* Styling properties here to get click effect */
+.is-primary:focus,
+hover,
+active {
+    color: white;
+    border-color: #1b9af7;
+    outline: none;
+}
+
+.is-success,
+.is-caution:focus,
+hover,
+active {
+    color: white;
+    border-color: #EDE7F6;
+    outline: none;
+}
+
+/* Formatting content styles go here */
+.content li+li {
+    margin-top: 0.25rem;
+}
+
+.content h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.125;
+    margin: 0.3rem 0;
+}
+
+.content h1 {
+    font-size: 2rem;
+}
+
+.content h2 {
+    font-size: 1.75rem;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+}
+
+.content h4 {
+    font-size: 1.25rem;
+}
+
+.content h5 {
+    font-size: 1.125rem;
+}
+
+.content h6 {
+    font-size: 1rem;
+}
+
+.content blockquote {
+    background-color: whitesmoke;
+    border-left: 0.3125rem solid #dbdbdb;
+    padding: 1.25rem 1.5rem;
+}
+
+.content ol {
+    list-style: decimal outside;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.content ul {
+    list-style: disc outside;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+
+/* Code that blurs modal background and positions it correctly */
+.modal,
+.modal-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Utlizing z-index here to get modal effect */
+.modal {
+    align-items: center;
+    display: none;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+
+.modal-background {
+    background-color: rgba(10, 10, 10, 0.86);
+}
+
+/* Style modal card content here */
+.modal-content,
+.modal-card {
+    margin: 0 1.25rem;
+    max-height: calc(100vh - 10rem);
+    overflow: auto;
+    position: relative;
+    width: 100%;
+}
+
+.modal-card {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 2.5rem);
+    overflow-x: hidden;
+}
+
+.modal-card-head,
+.modal-card-foot {
+    align-items: center;
+    background-color: #EDE7F6;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    padding: 0.6rem;
+    position: relative;
+}
+
+.modal-card-head {
+    border-bottom: 0.0625rem solid #673AB7;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+    padding: 0 0.6rem;
+}
+
+.modal-card-title {
+    color: #7E57C2;
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0 0 0 0.7rem
+}
+
+.modal-card-foot {
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    border-top: 0.0625rem solid #673AB7;
+    background-color: #EDE7F6;
+}
+
+/* Space footer buttons nicely */
+.modal-card-foot .button:not(:last-child) {
+    margin-right: 0.625rem;
+}
+
+.modal-card-body {
+    -webkit-overflow-scrolling: touch;
+    background-color: #D1C4E9;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: auto;
+    padding: 1.25rem;
+}
+
+/* Back arrow */
+a.back {
+    display: flex;
+    font-size: 1.3rem;
+    color: #dc3545;
+    text-decoration: none;
+    margin: 15vmax 0;
+    padding: 1rem 0.75rem;
+}
+
+a.back:hover,focus {
+    color: #1b9af7;
+}
+
+a.back:active {
+    color: #dc3545;
+}
+
+
+/* Media query for medium devices and up */
+@media screen and (min-width: 768px) {
+    .modal-content,
+    .modal-card {
+        margin: 0 auto;
+        max-height: calc(100vh - 2.5rem);
+        width: 40rem;
+    }
+}

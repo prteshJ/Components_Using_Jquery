@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Modal Component Demo</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+    <div id="btn">
+        <button id="btnModal" class="button is-primary" data-target="exampleModal" aria-haspopup="true">Reveal life secrets</button>
+        <a class="back" id="backLink" href="../index.html"><i class="fas fa-arrow-left"></i></a>
+    </div>
+    <!-- Modal code -->
+    <div id="exampleModal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Life Quotes</p>
+                <i class="fas fa-window-close button" aria-label="close" id="closeIcon"></i>
+            </header>
+            <section class="modal-card-body">
+                <div class="content">
+                    <h1>First secret - Love</h1>
+                    <p>Love is friendship that has caught fire. It is quiet understanding, mutual confidence, sharing and forgiving. It is loyalty through good and bad times. It settles for less than perfection and makes allowances for human weaknesses.</p>
+                    <h2>Second secret - Happiness</h2>
+                    <p>Happiness, true happiness, is an <strong>inner quality</strong>. It is a state of mind. If your mind is at peace, you are happy. If your mind is at peace, but you have nothing else, you can be happy. If you have everything the world can give - pleasure, possessions, power - but lack peace of mind, you can never be happy.</p>
+                    <ul>
+                        <li>To be happy, we must not be too concerned with others.</li>
+                        <li>Happiness is the art of never holding in your mind the memory of any unpleasant thing that has passed.</li>
+                        <li>Happiness is when what you think, what you say, and what you do are in harmony.</li>
+                        <li>Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.</li>
+                    </ul>
+                    <h3>Third secret - Respect</h3>
+                    <p><a href="https://en.wikipedia.org/wiki/Respect">Respect</a> is a positive feeling or action shown towards someone or something that is considered important, or held in high esteem or regard; it conveys a sense of admiration for good or valuable qualities; and it is also the process of honoring someone by exhibiting care, concern, or consideration for their needs or feelings.</p>
+                    <ol>
+                        <li>A person’s a person, no matter how small.</li>
+                        <li>Respect yourself and others will respect you.</li>
+                        <li>No one can make you feel inferior without your consent.</li>
+                        <li>Respect for ourselves guides our morals, respect for others guides our manners.</li>
+                        <li>One of the most sincere forms of respect is actually listening to what another has to say.</li>
+                        <li>Respect is a two-way street, if you want to get it, you’ve got to give it.</li>
+                        <li>Respect yourself, respect your own inner voice and follow it. </li>
+                    </ol>
+                    <blockquote>"A child who is allowed to be disrespectful to his parents will not have true respect for anyone."</blockquote>
+                    <p>The capacity for getting along with our neighbor depends to a large extent on the capacity for getting along with ourselves. The <em>self-respecting</em> individual will try to be as tolerant of his neighbor’s shortcomings as he is of his own.</p>
+                    <p>Respect requires empathy, the capacity to anticipate and understand the feelings of others. It requires consideration.</p>
+                    <p>Life is too short to waste your time on people who don’t respect, appreciate, and value you. Spend your life with people who make you smile, laugh, and feel loved.</p>
+                    <h4>Fourth secret - Courage</h4>
+                    <p>You gain strength, courage, and confidence by every experience in which you really stop to look fear in the face. You are able to say to yourself, 'I lived through this horror. I can take the next thing that comes along.</p>
+                    <p>Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.</p>
+                    <p>Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition.</p>
+                    <h5>Fifth secret - Struggle</h5>
+                    <p>The battle of life is, in most cases, fought uphill; and to win it without a struggle were perhaps to win it without honor. If there were no difficulties there would be no success; if there were nothing to struggle for, there would be nothing to be achieved.</p>
+                    <p>Your personal life, your professional life, and your creative life are all intertwined. I went through a few very difficult years where I felt like a failure. But it was actually really important for me to go through that. Struggle, for me, is the most inspirational thing in the world at the end of the day - as long as you treat it that way.</p>
+                    <h6>Sixth secret - Success</h6>
+                    <p><strong>Success</strong> is <em>Getting What You Want</em>, <strong>Happiness</strong> is <em>Wanting What You Get</em>.</p>
+                    <p>Success does not consist in never making mistakes but in never making the same one a second time.</p>
+                    <p>Life is a series of punches. It presents a lot of challenges. It presents a lot of hardship, but the people that are able to take those punches and able to move forward are the ones that really do have a lot of success and have a lot of joy in their life and have a lot of stories to tell, too.</p>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button is-success">Save changes</button>
+                <button class="button is-caution" id="btnCancel">Close</button>
+            </footer>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- jQuery-UI  -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- Modal JS code -->
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

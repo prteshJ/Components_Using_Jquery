@@ -1,0 +1,533 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #3F51B5;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 18.75rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    color: #424242;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+html,
+body,
+p,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+a {
+    color: #3F51B5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #212121;
+}
+
+a strong {
+    color: currentColor;
+}
+
+hr {
+    background-color: whitesmoke;
+    border: none;
+    display: block;
+    height: 2px;
+    margin: 2rem 0;
+}
+
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+strong {
+    color: #363636;
+    font-weight: 700;
+}
+
+/* Contains webpage content */
+div#blurMe.content {
+    display: flex;
+    flex-direction: column;
+    color: #fafafa;
+    padding: 0.9375rem;
+}
+
+/* Common styles for button and textarea */
+.button,
+.textarea {
+    font-size: 1rem;
+    display: inline-flex;
+    height: 2.25em;
+    line-height: 1.5;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    justify-content: flex-start;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: calc(0.625em - 1px);
+    padding-right: calc(0.625em - 1px);
+    padding-top: calc(0.375em - 1px);
+}
+
+/* Remove default focus ring that comes when tabbed through button and textarea */
+/* I provide alternate styling below */
+.button:focus,
+.textarea:focus,
+.button:active,
+.textarea:active {
+    outline: none;
+}
+
+/* Button styles to be retained*/
+.button {
+    background-color: white;
+    cursor: pointer;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+}
+
+.button .icon {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.button .icon:first-child:not(:last-child) {
+    margin-left: calc(-0.375em - 1px);
+    margin-right: 0.1875em;
+}
+
+.button .icon:first-child:last-child {
+    margin-left: calc(-0.375em - 1px);
+    margin-right: calc(-0.375em - 1px);
+}
+
+.button.primary {
+    background-color: #3F51B5;
+    border-color: transparent;
+    color: white;
+}
+
+.button.primary:hover {
+    background-color: #303F9F;
+    border-color: transparent;
+    color: white;
+}
+
+.button.primary:focus {
+    border-color: transparent;
+    color: white;
+}
+
+.button.primary:focus:not(:active) {
+    box-shadow: 0 0 0 0.125em #9FA8DA;
+}
+
+.button.primary:active,
+.button.primary.is-active {
+    background-color: #9FA8DA;
+    border-color: transparent;
+    color: white;
+}
+
+.button.primary.outlined {
+    background-color: transparent;
+    border-color: #3F51B5;
+    color: #3F51B5;
+}
+
+.button.primary.outlined:hover,
+.button.primary.outlined:focus {
+    background-color: #3F51B5;
+    border-color: #3F51B5;
+    color: white;
+}
+
+/* Text Area styles go here */
+.textarea {
+    background-color: white;
+    border:1px solid #C5CAE9;
+    color: #424242;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    max-width: 100%;
+    width: 100%;
+    resize: none;
+}
+
+.textarea:hover,
+.textarea.is-hovered {
+    border-color: #b5b5b5;
+}
+
+/* When hovered and clicked, owing to specificity,
+   focus border-color style property is correctly
+   retained over hover */
+.textarea:focus,
+.textarea:active {
+    border-color: #3F51B5;
+    box-shadow: 0 0 0 0.125em #E8EAF6;
+    content: " ";
+}
+
+/* Firefox */
+.textarea::-moz-placeholder {
+    color: #3F51B5;
+}
+
+/* Chrome */
+.textarea::-webkit-input-placeholder {
+    color: #3F51B5;
+}
+
+/* Field styles go here */
+/* Contains buttons to connect with me
+   and see my works */
+.field.is-grouped {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Add spacing between buttons */
+.field.is-grouped>p:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 0.75rem;
+}
+
+/* Icon styles go here */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* Navbar styles go here */
+.navbar {
+    background-color: white;
+    min-height: 3.25rem;
+    position: relative;
+    z-index: 3;
+}
+
+/* Company name or logo styles go here */
+.navbar-brand {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.navbar-brand a.nav-item:hover {
+    background-color: transparent;
+}
+
+/* Hamburger menu styles go here */
+.navbar-burger {
+    cursor: pointer;
+    display: block;
+    height: 3.25rem;
+    position: relative;
+    width: 3.25rem;
+    margin-left: auto;
+}
+
+/* Apply styles below to each element in hamburger menu */
+.navbar-burger span {
+    background-color: currentColor;
+    display: block;
+    height: 1px;
+    left: calc(50% - 8px);
+    position: absolute;
+    transform-origin: center;
+    transition-duration: 86ms;
+    transition-property: background-color, opacity, transform;
+    transition-timing-function: ease-out;
+    width: 16px;
+}
+
+/* Position first bar in hamburger menu */
+.navbar-burger span:nth-child(1) {
+    top: calc(50% - 0.375rem);
+}
+
+/* Position second bar in hamburger menu */
+.navbar-burger span:nth-child(2) {
+    top: calc(50% - 0.0625rem);
+}
+
+/* Position third bar in hamburger menu */
+.navbar-burger span:nth-child(3) {
+    top: calc(50% + 0.25rem);
+}
+
+.navbar-burger:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Animates active cross icon to hamburger icon */
+/* First bar logic */
+.navbar-burger.is-active span:nth-child(1) {
+    transform: translateY(0.3125rem) rotate(45deg);
+}
+
+/* Second bar logic */
+.navbar-burger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+/* Third bar logic */
+.navbar-burger.is-active span:nth-child(3) {
+    transform: translateY(-0.3125rem) rotate(-45deg);
+}
+
+/* Hide menu by default on devices not wide enough
+   when hamburger icon is being displayed */
+.navbar-menu {
+    display: none;
+}
+
+.nav-item,
+.nav-link {
+    color: #424242;
+    display: block;
+    line-height: 1.5;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+}
+
+a.nav-item,
+.nav-link {
+    cursor: pointer;
+}
+
+a.nav-item:hover,
+a.nav-item.is-active,
+.nav-link:hover,
+.nav-link.is-active {
+    background-color: #fafafa;
+    color: #3F51B5;
+}
+
+.nav-item {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.nav-item.has-dropdown {
+    padding: 0;
+}
+
+.nav-link {
+    padding-right: 2.5em;
+}
+
+/* Creates blue down arrow besides dropdown */
+.nav-link::after {
+    display: block;
+    position: absolute;
+    content: " ";
+    top: 50%;
+    border: 3px solid transparent;
+    border-radius: 2px;
+    border-right: 0;
+    border-top: 0;
+    width: 0.625em;
+    height: 0.625em;
+    pointer-events: none;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    border-color: #5C6BC0;
+    margin-top: -0.375em;
+    right: 1.125em;
+}
+
+.navbar-dropdown {
+    font-size: 0.875rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.navbar-dropdown .nav-item {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Divider for dropdown items */
+.navbar-divider {
+    background-color: whitesmoke;
+    border: none;
+    display: none;
+    height: 2px;
+    margin: 0.5rem 0;
+}
+
+/* For disabled elements */
+.is-inactive {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: #0000004d;
+}
+
+/* Media queries for responsive navbar */
+
+/* Media query for mobile navbar view */
+@media screen and (max-width: 1087px) {
+    .navbar-brand .nav-item {
+        align-items: center;
+        display: flex;
+    }
+    .nav-link::after {
+        display: none;
+    }
+    .navbar-menu {
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+        padding: 0.5rem 0;
+    }
+    .navbar-menu.is-active {
+        display: block;
+    }
+    .navbar-menu {
+        -webkit-overflow-scrolling: touch;
+        max-height: calc(100vh - 3.25rem);
+        overflow: auto;
+    }
+}
+
+/* Media query to restore default navbar view on larger devices */
+@media screen and (min-width: 1088px) {
+    .navbar,
+    .navbar-menu,
+    .navbar-start,
+    .navbar-end {
+        align-items: stretch;
+        display: flex;
+    }
+    .navbar {
+        min-height: 3.25rem;
+    }
+    /* Using !important here to override because of CSS specificity */
+    .navbar.light a.nav-item:hover,
+    .navbar.light a.nav-item.is-active {
+        background-color: transparent !important;
+    }
+    .navbar.light .nav-item.has-dropdown.is-active .nav-link {
+        background-color: transparent !important;
+    }
+    .navbar.light .navbar-dropdown a.nav-item:hover {
+        background-color: whitesmoke;
+        color: #0a0a0a;
+    }
+    .navbar.light .navbar-dropdown a.nav-item.is-active {
+        background-color: whitesmoke;
+        color: #3F51B5;
+    }
+    /* Hide hamburger icon */
+    .navbar-burger {
+        display: none;
+    }
+    .nav-item,
+    .nav-link {
+        align-items: center;
+        display: flex;
+    }
+    .nav-item.is-hoverable:hover .navbar-dropdown {
+        display: block;
+    }
+    .nav-item.is-active .navbar-dropdown.is-boxed,
+    .nav-item.is-hoverable:hover .navbar-dropdown.is-boxed {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+    /* Allow navbar menu items to expand to fill maximum space if available */
+    .navbar-menu {
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    .navbar-start {
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+    .navbar-end {
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+    .navbar-dropdown {
+       background-color: white;
+       box-shadow: 0 0.5rem 0.5rem black;
+       display: none;
+       position: absolute;
+       z-index: 2;
+       min-width: 100%;
+       font-size: 0.875rem;
+       left: 0;
+       top: 100%;
+       border-top: 2px solid #dbdbdb;
+       border-bottom-left-radius: 6px;
+       border-bottom-right-radius: 6px;
+    }
+    .navbar-dropdown .nav-item {
+        padding: 0.375rem 1rem;
+        white-space: nowrap;
+    }
+    .navbar-dropdown a.nav-item {
+        padding-right: 3rem;
+    }
+    .navbar-dropdown a.nav-item:hover {
+        background-color: whitesmoke;
+        color: #0a0a0a;
+    }
+    .navbar-dropdown a.nav-item.is-active {
+        background-color: whitesmoke;
+        color: #3F51B5;
+    }
+
+    .navbar-dropdown.is-boxed {
+        border-radius: 0.375rem;
+        border-top: none;
+        box-shadow: 0 0.5rem 0.5rem #0a0a0a1a, 0 0 0 0.0625rem #0a0a0a1a;
+        display: block;
+        opacity: 0;
+        pointer-events: none;
+        top: calc(100% + (-0.25rem));
+        -webkit-transform: translateY(-0.3125rem);
+        transform: translateY(-0.3125rem);
+        transition-duration: 80ms;
+        transition-property: opacity, transform;
+    }
+
+    .navbar-divider {
+        display: block;
+    }
+
+    a.nav-item.is-active,
+    .nav-link.is-active {
+        color: #0a0a0a;
+    }
+}
