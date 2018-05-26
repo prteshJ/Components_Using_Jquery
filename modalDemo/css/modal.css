@@ -203,7 +203,7 @@ h6 {
     flex-shrink: 0;
     font-size: 1.5rem;
     line-height: 1;
-    padding: 0 0 0 0.7rem
+    padding: 0 0 0 0.6rem
 }
 
 .modal-card-foot {
@@ -245,6 +245,10 @@ a.back:active {
     color: #dc3545;
 }
 
+#closeIcon {
+    margin-top: 1rem;
+    color: rgb(0,0,0);
+}
 
 /* Media query for medium devices and up */
 @media screen and (min-width: 768px) {
