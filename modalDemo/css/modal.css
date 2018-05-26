@@ -250,13 +250,6 @@ a.back:active {
     color: rgb(0,0,0);
 }
 
-/* Media query for portrait mode */
-@media screen and (orientation: portrait) {
-    .modal-card {
-        height:70vmax;
-    }
-}
-
 /* Media query for medium devices and up */
 @media screen and (min-width: 768px) {
     .modal-content,
