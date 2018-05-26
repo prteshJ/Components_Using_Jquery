@@ -78,7 +78,7 @@ active {
 
 /* Formatting content styles go here */
 .content {
-    height:65vmax;
+    height:80vmax;
 }
 
 .content li+li {
@@ -251,7 +251,7 @@ a.back:active {
     .modal-content,
     .modal-card {
         margin: 0 auto;
-        max-height: calc(100vh - 2.5rem);
+        max-height: calc(100vh - 3.5rem);
         width: 40rem;
     }
 }
