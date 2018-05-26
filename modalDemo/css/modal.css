@@ -77,6 +77,10 @@ active {
 }
 
 /* Formatting content styles go here */
+.content {
+    height:65vmax;
+}
+
 .content li+li {
     margin-top: 0.25rem;
 }
