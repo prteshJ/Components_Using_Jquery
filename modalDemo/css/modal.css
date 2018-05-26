@@ -253,7 +253,7 @@ a.back:active {
 /* Media query for portrait mode */
 @media screen and (orientation: portrait) {
     .modal-card {
-        height:80vmax;
+        height:70vmax;
     }
 }
 
