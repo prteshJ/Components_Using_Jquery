@@ -246,7 +246,7 @@ a.back:active {
 }
 
 #closeIcon {
-    margin-top: 1rem;
+    padding-top: 1rem;
     color: rgb(0,0,0);
 }
 
