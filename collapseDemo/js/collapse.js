@@ -49,5 +49,5 @@ $(document).ready(() => {
         setTimeout(function() {
             window.location = destination;
         }, 1500);
-    });s
+    });
 });
