@@ -1,8 +1,9 @@
 html,
 body {
     font-family: "Work Sans", sans-serif;
+    font-size:15px
     padding: 0;
-    margin: 1%;
+    margin: 2.5vmax;
 }
 
 *,
